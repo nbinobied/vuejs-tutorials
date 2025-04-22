@@ -1,5 +1,10 @@
-<script setup lang="ts"></script>
-
 <template>
-  <h1>Master Class</h1>
+  <main>
+    <RouterView />
+  </main>
 </template>
+
+<script setup lang="ts">
+var test = null;
+  
+</script>

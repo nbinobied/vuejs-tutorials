@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { supabase } from '@/lib/supabaseClient'
+// import { supabase } from '@/lib/supabaseClient'
 
-console.log('supabase', supabase)
+// console.log(supabase)
 </script>
 
 <template>
-  <h1>Master Class</h1>
+  <main>
+    <RouterView />
+  </main>
 </template>

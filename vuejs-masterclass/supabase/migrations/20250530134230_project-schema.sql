@@ -12,5 +12,6 @@ create table projects (
     slug text unique not null,
     status project_status not null default 'in-progress',
     created_at timestamptz default now() not null,
-    collaborators text array default array[]::varchar[] not null
+    collaborators text array default array[]::varchar[] not null,
+    description text default '' not null
 );

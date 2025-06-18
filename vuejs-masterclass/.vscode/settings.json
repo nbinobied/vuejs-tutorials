@@ -1,0 +1,34 @@
+{
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "deno.enablePaths": ["supabase/functions"],
+  "deno.lint": true,
+  "deno.unstable": [
+    "bare-node-builtins",
+    "byonm",
+    "sloppy-imports",
+    "unsafe-proto",
+    "webgpu",
+    "broadcast-channel",
+    "worker-options",
+    "cron",
+    "kv",
+    "ffi",
+    "fs",
+    "http",
+    "net"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, pnpm*, .yarnrc*, yarn*, .prettier*, prettier*, .editorconfig, components.json",
+    "tsconfig.json": "tsconfig.*.json",
+    "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*, tailwind.config.js, .eslint*, eslint*",
+    "env.d.ts": "auto-imports.d.ts, components.d.ts, typed-router.d.ts"
+  }
+}

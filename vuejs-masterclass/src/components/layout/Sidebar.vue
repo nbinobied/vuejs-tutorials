@@ -1,7 +1,5 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script lang="ts" setup>
-import SidebarLinks from './SidebarLinks.vue'
-
 const topLinks = [
   {
     to: '/',

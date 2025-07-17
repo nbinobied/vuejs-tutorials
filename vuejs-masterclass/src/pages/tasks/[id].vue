@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 import { taskQuery, type Task } from '@/utils/supaQueries'
 
@@ -13,9 +14,9 @@ watch(
 )
 
 const getTask = async () => {
-  const { data, error } = await taskQuery(route.params.id)
+  const { data, error, status } = await taskQuery(route.params.id as string)
 
-  if (error) console.log(error)
+  if (error) useErrorStore().setError({ error, statusCode: status })
 
   task.value = data
 }

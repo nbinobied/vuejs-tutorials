@@ -30,5 +30,8 @@
     "tsconfig.json": "tsconfig.*.json",
     "vite.config.*": "jsconfig*, vitest.config.*, cypress.config.*, playwright.config.*, tailwind.config.js, .eslint*, eslint*",
     "env.d.ts": "auto-imports.d.ts, components.d.ts, typed-router.d.ts"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   }
 }
